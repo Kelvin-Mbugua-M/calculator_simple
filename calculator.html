@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="cal.js"></script>
+    <title>traditional-calculator</title>
+
+</head>
+<body>
+    <h1>DO THE MATH</h1>
+    <section class="mainBody">
+        <div class="screen">
+         <input type="text" id="input" readonly class="inputActive">
+         <aside class="output">
+            <p id="ans">ANS</p>
+            <input type="text" id="answerBar" readonly class="inputActive">
+        </aside>
+        </div>
+        <div class="clear">
+            <button id="clearButton" onclick="clearScreen()">clear screen</button>
+        </div>
+        <div class="buttons">
+            <div class="rows">
+                <button id="seven" onclick="addValueToDisplay('7')">7</button>
+                <button id="eight" onclick="addValueToDisplay('8')">8</button>
+                <button id="nine" onclick="addValueToDisplay('9')">9</button>
+                <button id="multiply" onclick="addValueToDisplay('*')">x</button>
+            </div>
+            <div class="rows">
+                <button id="four" onclick="addValueToDisplay('4')">4</button>
+                <button id="five" onclick="addValueToDisplay('5')">5</button>
+                <button id="six" onclick="addValueToDisplay('6')">6</button>
+                <button id="subtract" onclick="addValueToDisplay('-')">-</button>
+            </div>
+            <div class="rows">
+                <button id="one" onclick="addValueToDisplay('1')">1</button>
+                <button id="two" onclick="addValueToDisplay('2')">2</button>
+                <button id="three" onclick="addValueToDisplay('3')">3</button>
+                <button id="divider"onclick="addValueToDisplay('/')">/</button>
+            </div>
+            <div class="rows">
+                <button id="decimal" onclick="addValueToDisplay('.')">.</button>
+                <button id="zero" onclick="addValueToDisplay('0')">0</button>
+                <button id="plus" onclick="addValueToDisplay('+')">+</button>
+                <button id="equates" onclick="executeValues()">=</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
