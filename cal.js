@@ -1,5 +1,6 @@
 const displayInput= document.getElementById('input');
 const displayOutPut=document.getElementById('answerBar');
+console.log( typeof displayInput);
 function clearScreen(){
     displayInput.value="";
     displayOutPut.value="";
@@ -17,3 +18,10 @@ function addValueToDisplay(points){
     displayInput.value+=points;
     return executeValues();
 }
+document.addEventListener('keypress',function(e){
+    for(let i=0;i<=9;i++){
+        if(e.key==i){
+            addValueToDisplay(i)
+        }
+}  
+})
